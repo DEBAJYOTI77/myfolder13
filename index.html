@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo">
+                    <img src="./images/images.png" alt="">
+                </div>
+                <div>
+                    <h1>Project Dashboard</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="controls">
+                <select class="select">
+                    <option>-- Select Block User --</option>
+                    <option>-- Select Block A </option>
+
+                </select>
+                <select class="select">
+                    <option>-- Select GP --</option>
+                </select>
+                <input class="input" placeholder="Start date" />
+                <input class="input" placeholder="End date" />
+                <button class="btn">Apply</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="left">
+                <div class="card">
+                    <h2>Project Summary</h2>
+                    <div class="filters">
+                        <div class="chip">Population</div>
+                        <div class="chip">HH</div>
+                        <div class="chip">Institution</div>
+                        <div class="chip">Shop</div>
+                        <div class="chip">Segregation</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Key Metrics</h2>
+                    <div class="kpis">
+                        <div class="kpi">
+                            <div class="val">1,248</div>
+                            <div class="lbl">Total WGU's</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="val">1,012</div>
+                            <div class="lbl">WGU's Covered</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="val">78%</div>
+                            <div class="lbl">% Generating Waste</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="val">42%</div>
+                            <div class="lbl">% Segregated Waste</div>
+                        </div>
+                    </div>
+                    <div style="height:12px"></div>
+                    <div class="flowchart">
+                        <div class="flow-item">Population</div>
+                        <div class="flow-item">HH</div>
+                        <div class="flow-item">Institution</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Inventory</h2>
+                    <div class="inventory-grid">
+                        <div class="inv"><strong>5.4 t</strong><small>Total Waste Handled (Ton)</small></div>
+                        <div class="inv"><strong>2.1 t</strong><small>Bio-Degradable Waste</small></div>
+                        <div class="inv"><strong>0.9 t</strong><small>Non-Bio Waste</small></div>
+                        <div class="inv"><strong>1.5 t</strong><small>Dry/Plastic Recovered</small></div>
+                        <div class="inv"><strong>0.6 t</strong><small>Total Manure Produced</small></div>
+                        <div class="inv"><strong>₹ 1549</strong><small>Total Dry/Plastic sell</small></div>
+                        <div class="inv"><strong>₹ 7.9 t</strong><small>User Fees Collected</small></div>
+                        <div class="inv"><strong>₹ 2,188</strong><small></small>Total Dry/Plastic wast sell</div>
+                        <div class="inv"><strong>₹ 1237</strong><small>Total Manure Produced sell</small></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Project Activity </h2>
+                    <div class="project-grid">
+                        <div class="prog"><strong>24</strong><small>Meetings & Trainings</small></div>
+                        <div class="prog"><strong>312</strong><small>Household Counselling</small></div>
+                        <div class="prog"><strong>18</strong><small>Mass Campaigns</small></div>
+                        <div class="prog"><strong>90</strong><small>Capacity Building</small></div>
+                        <div class="prog"><strong>120</strong><small>Sensitisation Programs</small></div>
+                        <div class="prog"><strong>Branding & Visibility</strong><small>Ongoing</small></div>
+                    </div>
+                    <div style="height:12px"></div>
+                    <div class="flowchart">
+                        <div class="flow-item">wall writing(439)</div>
+                        <div class="flow-item">sensitizition program(346)</div>
+                        <div class="flow-item">branding and Visibility(564)</div>
+                    </div>
+                </div>
+
+                <div class="card">
+<div class="card">
+    <h2>Charts (2024 / 2025)</h2>
+    <canvas id="wasteChart" height="160"></canvas>
+</div>
+
+
+
+
+
+                </div>
+                <div class="card">
+                    <h2>VEHICLE AND MANPOWER DEPLOYMENT </h2>
+                    <div class="project-grid">
+                        <div class="prog"><strong>24</strong><small>Total no of 
+Manpower till Last 
+Month</small></div>
+                        <div class="prog"><strong></strong><small>No of manpower 
+receiving regular 
+health check ups</small></div>
+                        <div class="prog"><strong></strong><small>Vehicle</small></div>
+                        
+                       
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <aside class="right">
+                <div class="card">
+                    <h2>Coverage Details</h2>
+                    <div class="legend">
+                        <div class="chip">Population covered: <strong>72%</strong></div>
+                        <div class="chip">HH covered: <strong>80%</strong></div>
+                        <div class="chip">Institutions: <strong>65</strong></div>
+                    </div>
+                    <div style="height:12px"></div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Given Segregation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Population</td>
+                                <td>820</td>
+                            </tr>
+                            <tr>
+                                <td>HH</td>
+                                <td>340</td>
+                            </tr>
+                            <tr>
+                                <td>Shops</td>
+                                <td>52</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h2>Vehicle & Manpower</h2>
+                    <div class="vehicles">
+                        <div class="vehicle">Vehicle: 6</div>
+                        <div class="vehicle">Drivers: 8</div>
+                        <div class="vehicle">Collectors: 22</div>
+                    </div>
+                    <div style="height:10px"></div>
+
+                    <div class="card">
+                        <h2>Social Security & Entitlements</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Scheme</th>
+                                    <th>Beneficiaries</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pension</td>
+                                    <td>54</td>
+                                </tr>
+                                <tr>
+                                    <td>Ration Card</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>Labour Card</td>
+                                    <td>32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="card kpi-bars">
+  <h3 class="font-semibold">KPIs</h3>
+
+  <div class="kpi-bar">
+      <div class="kpi-label">Waste Generating Covered <strong>76%</strong></div>
+      <div class="kpi-track">
+          <div class="kpi-fill" style="width:76%"></div>
+      </div>
+  </div>
+
+  <div class="kpi-bar">
+      <div class="kpi-label">Segregated <strong>42%</strong></div>
+      <div class="kpi-track">
+          <div class="kpi-fill pink" style="width:42%"></div>
+      </div>
+  </div>
+
+  <div class="kpi-bar">
+      <div class="kpi-label">HHs Covered <strong>11,764</strong></div>
+      <div class="kpi-track">
+          <div class="kpi-fill lime" style="width:100%"></div>
+      </div>
+  </div>
+</div>
+
+
+
+                    </div>
+
+
+                    <div class="card">
+                        <h2>Social Security &amp; Entitlements</h2>
+                        <div class="card"
+                            style="background:linear-gradient(135deg, rgba(110,231,183,0.10), rgba(96,165,250,0.08)); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.08);">
+                            <div style="text-align:center; font-weight:700; margin-bottom:12px; font-size:14px;">No. of
+                                Manpower Receiving Social Security Schemes and Entitlements</div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Scheme</th>
+                                        <th>Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bank A/C</td>
+                                        <td>400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PAN Card</td>
+                                        <td>289</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ration Card</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lakshmir Bhandar</td>
+                                        <td>456</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E‑Shram Card</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Swasthya Sathi</td>
+                                        <td>90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="card" style="padding:20px; margin-top:20px;">
+    <h3 class="font-semibold" style="margin-bottom:12px;">Monthly Waste Trend</h3>
+    <canvas id="trendChart" style="height:260px;"></canvas>
+</div>
+
+</aside>
+        </main>
+        <div id="newChat"
+    style="position:fixed; bottom:214px; right:24px; width:320px; background:#0f172a; border-radius:14px; border:1px solid rgba(255,255,255,0.06); font-family:Inter, sans-serif; box-shadow:0 10px 40px rgba(0,0,0,0.5); overflow:hidden;">
+
+    <div style="padding:12px 14px; background:#1e3a8a; color:#fff; font-weight:600;">
+    Chat
+    </div>
+
+    <div id="newChatMessages" style="padding:12px; overflow-y:auto;">
+
+        <!-- Example First Message -->
+        <div class="chat-row">
+            <img src="./images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" class="chat-avatar">
+            <div class="chat-bubble client-bubble">Hello, I need an update.</div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div style="display:flex; padding:10px; gap:6px; background:#275bcb;">
+        <input id="newChatInput" type="text" placeholder="Type here..."
+            style="flex:1; padding:8px; background:#1f2937; border:none; color:white; border-radius:8px;">
+        <button onclick="sendNewChat()"
+            style="padding:8px 12px; background:#3b82f6; border:none; border-radius:8px; color:white; cursor:pointer;">
+            Send
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('wasteChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                datasets: [{
+                    label: 'Waste Generated (Ton)',
+                    data: [1.2, 1.4, 1.6, 1.1, 1.7, 1.9, 2.1],
+                    borderWidth: 2,
+                    borderColor: '#60a5fa',
+                    tension: 0.3,
+                    fill: false
+                }, {
+                    label: 'Waste Segregated (Ton)',
+                    data: [0.6, 0.8, 0.9, 0.7, 1.0, 1.2, 1.3],
+                    borderWidth: 2,
+                    borderColor: '#6ee7b7',
+                    tension: 0.3,
+                    fill: false
+                }]
+            },
+            options: {
+                plugins: { legend: { labels: { color: '#e6eef8' } } },
+                scales: {
+                    x: { ticks: { color: '#98a0b3' } },
+                    y: { ticks: { color: '#98a0b3' } }
+                }
+            }
+        });
+
+const ctx2 = document.getElementById("trendChart");
+
+new Chart(ctx2, {
+    type: "line",
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun","July"],
+        datasets: [{
+            label: "Waste Generated",
+            data: [120, 160, 140, 200, 240, 260],
+            fill: true,
+            tension: 0.4,
+            borderWidth: 2,
+            borderColor: "rgba(96,165,250,1)",
+            backgroundColor: "rgba(96,165,250,0.15)",
+            pointRadius: 4,
+            pointBackgroundColor: "#60a5fa"
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { labels: { color: "#e6eef8" }}},
+        scales: {
+            y: { ticks: { color: "#e6eef8" }, grid: { color:"rgba(255,255,255,0.06)" }},
+            x: { ticks: { color: "#e6eef8" }, grid: { display:false }}
+        }
+    }
+});
+
+const btn = document.getElementById("chatToggleBtn");
+const chat = document.getElementById("newChat");
+
+let isOpen = false;
+
+btn.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    chat.style.display = isOpen ? "block" : "none";
+    btn.textContent = isOpen ? "×" : "+";
+});
+        
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
